@@ -8,8 +8,8 @@ public class BookTest {
     public static void main(String[] args) {
 
 
-        BookDTO book1 = new BookDTO();
 
+        BookDTO book1 = new BookDTO();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("==책 정보를 입력하세요==");
@@ -31,10 +31,10 @@ public class BookTest {
 
         System.out.print("출판사 : ");
         book1.setBookPublisher(sc.next());
-
         BookDAO bookDAO = new BookDAO();
 
-        bookDAO.insetBook(book1);
+        bookDAO.insertBook(book1);
+
 
 
         System.out.println("==책 전체 목록 입니다==");

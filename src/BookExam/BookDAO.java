@@ -12,7 +12,7 @@ public class BookDAO {
 
             try {
                 con = DriverManager.getConnection
-                        ("jdbc:mysql://127.0.0.1:3306/memberdb","june", "1111");
+                        ("jdbc:mysql://127.0.0.1:3306/memberdb","june", "dnjffl12!@");
 //SQL
 
                 String sql =
@@ -31,10 +31,13 @@ public class BookDAO {
                     booklist.add(bookDTO);
                 }
 
+                System.out.println("==========================================================================");
                 for (BookDTO book: booklist
                      ) {
-                    System.out.println(book);
-                }
+                    System.out.println(book);}
+
+                System.out.println("==========================================================================");
+
 
             } catch (SQLException e) {
                 System.err.println("연결 오류" + e.getMessage());
@@ -49,11 +52,11 @@ public class BookDAO {
 
 
 
-    public void insetBook(BookDTO bookDTO) {
+    public void insertBook(BookDTO bookDTO) {
         Connection con = null;
         try {
             con = DriverManager.getConnection
-                    ("jdbc:mysql://127.0.0.1:3306/memberdb", "june", "1111");
+                    ("jdbc:mysql://127.0.0.1:3306/memberdb", "june", "dnjffl12!@");
 //SQL
 
             String sql =

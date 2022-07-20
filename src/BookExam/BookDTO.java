@@ -6,14 +6,13 @@ public class BookDTO {
 
     @Override
     public String toString() {
-        return "BookDTO{" +
-                "책 번호='" + bookNo + '\'' +
-                ", 책 제목='" + bookTitle + '\'' +
-                ", 저자='" + bookAuthor + '\'' +
-                ", 출판연도='" + bookYear + '\'' +
-                ", 가격=" + bookPrice +
-                ", 출판사='" + bookPublisher + '\'' +
-                '}';
+        return
+                bookNo + "     " +
+                 bookTitle + "     " +
+                bookAuthor + "     " +
+                 bookYear + "     " +
+                 bookPrice + "     " +
+                 bookPublisher ;
     }
 
     private String bookNo;
