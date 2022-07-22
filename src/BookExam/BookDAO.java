@@ -12,7 +12,7 @@ public class BookDAO {
 
             try {
                 con = DriverManager.getConnection
-                        ("jdbc:mysql://127.0.0.1:3306/memberdb","june", "dnjffl12!@");
+                        ("jdbc:mysql://127.0.0.1:3306/memberdb","june", "1111");
 //SQL
 
                 String sql =
@@ -56,7 +56,7 @@ public class BookDAO {
         Connection con = null;
         try {
             con = DriverManager.getConnection
-                    ("jdbc:mysql://127.0.0.1:3306/memberdb", "june", "dnjffl12!@");
+                    ("jdbc:mysql://127.0.0.1:3306/memberdb", "june", "1111");
 //SQL
 
             String sql =
