@@ -1,19 +1,6 @@
 package BookExam;
 
-
 public class BookDTO {
-
-
-    @Override
-    public String toString() {
-        return
-                bookNo + "     " +
-                 bookTitle + "     " +
-                bookAuthor + "     " +
-                 bookYear + "     " +
-                 bookPrice + "     " +
-                 bookPublisher ;
-    }
 
     private String bookNo;
     private String bookTitle;
@@ -32,6 +19,17 @@ public class BookDTO {
         this.bookPublisher = bookPublisher;
     }
 
+
+    @Override
+    public String toString() {
+        return
+                bookNo + "\t" +
+                        bookTitle + "\t\t" +
+                        bookAuthor + "\t" +
+                        bookYear.substring(0,4) + " \t" +
+                        bookPrice + "\t" +
+                        bookPublisher;
+    }
 
     public String getBookNo() {
         return bookNo;

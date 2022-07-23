@@ -33,11 +33,9 @@ public class BookDAO {
 
                 System.out.println("==========================================================================");
                 for (BookDTO book: booklist
-                     ) {
-                    System.out.println(book);}
+                ) { System.out.println(book);}
 
                 System.out.println("==========================================================================");
-
 
             } catch (SQLException e) {
                 System.err.println("연결 오류" + e.getMessage());
@@ -49,6 +47,7 @@ public class BookDAO {
                 }
             }
         }
+
 
 
 
@@ -85,12 +84,6 @@ public class BookDAO {
             } catch (SQLException e) {
             }
         }
-    }
 
-
-
-
-
-
-
+        }
 }

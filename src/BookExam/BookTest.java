@@ -1,6 +1,7 @@
 package BookExam;
 
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BookTest {
@@ -17,11 +18,15 @@ public class BookTest {
         System.out.print("책 번호 : ");
         book1.setBookNo(sc.next());
 
+
+        sc.nextLine();
+
         System.out.print("책 제목 : ");
-        book1.setBookTitle(sc.next());
+        book1.setBookTitle(sc.nextLine());
+
 
         System.out.print("책 저자 : ");
-        book1.setBookAuthor(sc.next());
+        book1.setBookAuthor(sc.nextLine());
 
         System.out.print("책 연도 : ");
         book1.setBookYear(sc.next());
@@ -29,8 +34,11 @@ public class BookTest {
         System.out.print("책 가격 : ");
         book1.setBookPrice(sc.nextInt());
 
+        sc.nextLine();
+
         System.out.print("출판사 : ");
-        book1.setBookPublisher(sc.next());
+        book1.setBookPublisher(sc.nextLine());
+
         BookDAO bookDAO = new BookDAO();
 
         bookDAO.insertBook(book1);

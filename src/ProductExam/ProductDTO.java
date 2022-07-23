@@ -1,7 +1,5 @@
 package ProductExam;
 
-import java.time.LocalDate;
-
 public class ProductDTO {
 
     private int prdNo;
@@ -21,10 +19,5 @@ public class ProductDTO {
     @Override
     public String toString() {
         return
-                prdNo +
-                "      " + prdName +
-                "      " + prdPrice +
-                "      " + prdYear +
-                "      " + prdMaker
-                ;}
+                prdNo + "\t\t" + prdName +"\t"+ prdPrice +"\t"+ prdYear +"\t"+ prdMaker;}
 }
